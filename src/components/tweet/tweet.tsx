@@ -96,7 +96,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
             `accent-tab hover-card relative flex flex-col 
              gap-y-4 px-4 py-3 outline-none duration-200`,
             parentTweet
-              ? 'mt-0.5 pt-2.5 pb-0'
+              ? 'mt-0.5 pb-0 pt-2.5'
               : 'border-b border-light-border dark:border-dark-border'
           )}
           onClick={delayScroll(200)}
