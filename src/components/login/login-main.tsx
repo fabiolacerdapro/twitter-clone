@@ -12,7 +12,7 @@ export function LoginMain(): JSX.Element {
         <NextImage
           imgClassName='object-cover'
           blurClassName='bg-accent-blue'
-          src='/assets/twitter-banner.png'
+          src='/assets/network-banner.png'
           alt='Twitter banner'
           layout='fill'
           useSkeleton
@@ -30,11 +30,11 @@ export function LoginMain(): JSX.Element {
         </i>
         <div className='flex max-w-xs flex-col gap-4 font-twitter-chirp-extended lg:max-w-none lg:gap-16'>
           <h1
-            className='text-3xl before:content-["See_what’s_happening_in_the_world_right_now."] 
-                       lg:text-6xl lg:before:content-["Happening_now"]'
+            className='text-3xl before:content-["Faça_parte_a_nova_era_das_redes."] 
+                       lg:text-6xl lg:before:content-["A_Rede_de_Tudo"]'
           />
           <h2 className='hidden text-xl lg:block lg:text-3xl'>
-            Join Twitter today.
+            Começe hoje mesmo.
           </h2>
         </div>
         <div className='flex max-w-xs flex-col gap-6 [&_button]:py-2'>
@@ -47,25 +47,25 @@ export function LoginMain(): JSX.Element {
             >
               <CustomIcon iconName='GoogleIcon' /> Sign up with Google
             </Button>
-            <Button
+            {/* <Button
               className='flex cursor-not-allowed justify-center gap-2 border border-light-line-reply font-bold text-light-primary
                          transition hover:bg-[#e6e6e6] focus-visible:bg-[#e6e6e6] active:bg-[#cccccc] dark:border-0
                          dark:bg-white dark:hover:brightness-90 dark:focus-visible:brightness-90 dark:active:brightness-75'
             >
               <CustomIcon iconName='AppleIcon' /> Sign up with Apple
-            </Button>
-            <div className='grid w-full grid-cols-[1fr,auto,1fr] items-center gap-2'>
+            </Button> */}
+            {/* <div className='grid w-full grid-cols-[1fr,auto,1fr] items-center gap-2'>
               <i className='border-b border-light-border dark:border-dark-border' />
               <p>or</p>
               <i className='border-b border-light-border dark:border-dark-border' />
-            </div>
-            <Button
+            </div> */}
+            {/* <Button
               className='cursor-not-allowed bg-accent-blue text-white transition hover:brightness-90
                          focus-visible:!ring-accent-blue/80 focus-visible:brightness-90 active:brightness-75'
             >
               Sign up with phone or email
-            </Button>
-            <p
+            </Button> */}
+            {/* <p
               className='inner:custom-underline inner:custom-underline text-center text-xs
                          text-light-secondary inner:text-accent-blue dark:text-dark-secondary'
             >
@@ -94,7 +94,7 @@ export function LoginMain(): JSX.Element {
                 Cookie Use
               </a>
               .
-            </p>
+            </p> */}
           </div>
           <div className='flex flex-col gap-3'>
             <p className='font-bold'>Already have an account? </p>
