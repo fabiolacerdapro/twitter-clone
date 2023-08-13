@@ -118,7 +118,7 @@ export function InputForm({
         closeModal={closeModal}
       >
         <ActionModal
-          title='Discard Tweet?'
+          title='Discard?'
           description='This can’t be undone and you’ll lose your draft.'
           mainBtnClassName='bg-accent-red hover:bg-accent-red/90 active:bg-accent-red/75'
           mainBtnLabel='Discard'
@@ -145,9 +145,7 @@ export function InputForm({
             className='w-full min-w-0 resize-none bg-transparent text-xl outline-none
                        placeholder:text-light-secondary dark:placeholder:text-dark-secondary'
             value={inputValue}
-            placeholder={
-              reply || replyModal ? 'Tweet your reply' : "What's happening?"
-            }
+            placeholder={reply || replyModal ? 'Your reply' : 'Say something!'}
             onBlur={handleShowHideNav(true)}
             minRows={loading ? 1 : modal && !isUploadingImages ? 3 : 1}
             maxRows={isUploadingImages ? 5 : 15}

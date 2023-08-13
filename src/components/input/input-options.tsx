@@ -20,32 +20,32 @@ const options: Readonly<Options> = [
     name: 'Media',
     iconName: 'PhotoIcon',
     disabled: false
-  },
-  {
-    name: 'GIF',
-    iconName: 'GifIcon',
-    disabled: true
-  },
-  {
-    name: 'Poll',
-    iconName: 'ChartBarIcon',
-    disabled: true
-  },
-  {
-    name: 'Emoji',
-    iconName: 'FaceSmileIcon',
-    disabled: true
-  },
-  {
-    name: 'Schedule',
-    iconName: 'CalendarDaysIcon',
-    disabled: true
-  },
-  {
-    name: 'Location',
-    iconName: 'MapPinIcon',
-    disabled: true
   }
+  // {
+  //   name: 'GIF',
+  //   iconName: 'GifIcon',
+  //   disabled: true
+  // },
+  // {
+  //   name: 'Poll',
+  //   iconName: 'ChartBarIcon',
+  //   disabled: true
+  // },
+  // {
+  //   name: 'Emoji',
+  //   iconName: 'FaceSmileIcon',
+  //   disabled: true
+  // },
+  // {
+  //   name: 'Schedule',
+  //   iconName: 'CalendarDaysIcon',
+  //   disabled: true
+  // },
+  // {
+  //   name: 'Location',
+  //   iconName: 'MapPinIcon',
+  //   disabled: true
+  // }
 ];
 
 type InputOptionsProps = {
@@ -141,7 +141,7 @@ export function InputOptions({
                      enabled:active:bg-main-accent/75'
           disabled={!isValidTweet}
         >
-          {reply ? 'Reply' : 'Tweet'}
+          {reply ? 'Reply' : 'Post'}
         </Button>
       </div>
     </motion.div>
