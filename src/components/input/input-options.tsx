@@ -141,7 +141,7 @@ export function InputOptions({
                      enabled:active:bg-main-accent/75'
           disabled={!isValidTweet}
         >
-          {reply ? 'Reply' : 'Post'}
+          {reply ? 'Reply' : 'Criar'}
         </Button>
       </div>
     </motion.div>
