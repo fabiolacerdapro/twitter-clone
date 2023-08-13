@@ -7,10 +7,7 @@ import type { ReactElement, ReactNode } from 'react';
 export default function Login(): JSX.Element {
   return (
     <div className='grid min-h-screen grid-rows-[1fr,auto]'>
-      <SEO
-        title='Twitter - It’s what’s happening'
-        description='From breaking news and entertainment to sports and politics, get the full story with all the live commentary.'
-      />
+      <SEO title='Network - All In One' description='The network for all' />
       <LoginMain />
       <LoginFooter />
     </div>
