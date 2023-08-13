@@ -30,19 +30,19 @@ const navLinks: Readonly<NavLink[]> = [
     linkName: 'Explore',
     iconName: 'HashtagIcon',
     disabled: true,
-    canBeHidden: true
+    canBeHidden: false
   },
   {
     href: '/notifications',
     linkName: 'Notifications',
     iconName: 'BellIcon',
-    disabled: true
+    disabled: false
   },
   {
     href: '/messages',
     linkName: 'Messages',
     iconName: 'EnvelopeIcon',
-    disabled: true
+    disabled: false
   },
   {
     href: '/bookmarks',
@@ -55,7 +55,7 @@ const navLinks: Readonly<NavLink[]> = [
     linkName: 'Lists',
     iconName: 'Bars3BottomLeftIcon',
     disabled: true,
-    canBeHidden: true
+    canBeHidden: false
   }
 ];
 
