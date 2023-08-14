@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 8080",
+    "dev": "next dev -p 80",
     "build": "next build",
     "start": "next start",
     "format": "prettier --check .",
@@ -15,15 +15,17 @@
   "dependencies": {
     "@headlessui/react": "^1.7.2",
     "@heroicons/react": "^2.0.11",
+    "@types/next": "^9.0.0",
     "clsx": "^1.2.1",
     "firebase": "^9.23.0",
-    "framer-motion": "^7.2.1",
-    "next": "12.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "framer-motion": "^7.10.3",
+    "next": "^12.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hot-toast": "^2.3.0",
     "react-textarea-autosize": "^8.3.4",
-    "swr": "^1.3.0"
+    "swr": "^1.3.0",
+    "upgrade": "^1.1.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",

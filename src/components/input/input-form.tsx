@@ -127,7 +127,7 @@ export function InputForm({
         />
       </Modal>
       <div className='flex flex-col gap-6'>
-        {isVisibilityShown && (
+        {/* {isVisibilityShown && (
           <motion.button
             type='button'
             className='custom-button accent-tab accent-bg-tab flex cursor-not-allowed items-center gap-1
@@ -138,7 +138,7 @@ export function InputForm({
             <p className='font-bold'>Everyone</p>
             <HeroIcon className='h-4 w-4' iconName='ChevronDownIcon' />
           </motion.button>
-        )}
+        )} */}
         <div className='flex items-center gap-3'>
           <TextArea
             id={formId}
@@ -166,7 +166,7 @@ export function InputForm({
         </div>
       </div>
       {children}
-      {isVisibilityShown && (
+      {/* {isVisibilityShown && (
         <motion.div
           className='flex border-b border-light-border pb-2 dark:border-dark-border'
           {...fromBottom}
@@ -180,7 +180,7 @@ export function InputForm({
             <p className='font-bold'>Everyone can reply</p>
           </button>
         </motion.div>
-      )}
+      )} */}
     </div>
   );
 }

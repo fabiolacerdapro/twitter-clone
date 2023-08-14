@@ -1,0 +1,76 @@
+[debug] [2023-08-14T19:06:17.187Z] ----------------------------------------------------------------------
+[debug] [2023-08-14T19:06:17.190Z] Command:       /usr/local/share/nvm/versions/node/v20.4.0/bin/node /home/codespace/nvm/current/bin/firebase serve
+[debug] [2023-08-14T19:06:17.190Z] CLI Version:   12.4.7
+[debug] [2023-08-14T19:06:17.191Z] Platform:      linux
+[debug] [2023-08-14T19:06:17.191Z] Node Version:  v20.4.0
+[debug] [2023-08-14T19:06:17.191Z] Time:          Mon Aug 14 2023 19:06:17 GMT+0000 (Coordinated Universal Time)
+[debug] [2023-08-14T19:06:17.191Z] Env Overrides: GITHUB_API_URL
+[debug] [2023-08-14T19:06:17.191Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-14T19:06:17.326Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-14T19:06:17.326Z] > authorizing via signed-in user (fabiolaccerd01@gmail.com)
+[debug] [2023-08-14T19:06:17.326Z] [iam] checking project twitter-clone-2e6ad for permissions ["firebase.projects.get"]
+[debug] [2023-08-14T19:06:17.328Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-2e6ad:testIamPermissions [none]
+[debug] [2023-08-14T19:06:17.328Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-2e6ad:testIamPermissions x-goog-quota-user=projects/twitter-clone-2e6ad
+[debug] [2023-08-14T19:06:17.328Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-2e6ad:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-14T19:06:17.440Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-2e6ad:testIamPermissions 200
+[debug] [2023-08-14T19:06:17.441Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-2e6ad:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-14T19:06:17.442Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-2e6ad [none]
+[debug] [2023-08-14T19:06:17.648Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-2e6ad 200
+[debug] [2023-08-14T19:06:17.648Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-2e6ad {"projectId":"twitter-clone-2e6ad","projectNumber":"1043492946173","displayName":"twitter-clone","name":"projects/twitter-clone-2e6ad","resources":{"hostingSite":"twitter-clone-2e6ad","realtimeDatabaseInstance":"twitter-clone-2e6ad-default-rtdb","storageBucket":"twitter-clone-2e6ad.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_80e6272a-dce0-4210-ba5a-a979d7b23e66"}
+[info] 
+[info] === Serving from '/workspaces/twitter-clone'...
+[info] 
+[debug] [2023-08-14T19:06:17.663Z] defaultcredentials: writing to file /home/codespace/.config/firebase/fabiolaccerd01_gmail_com_application_default_credentials.json
+[debug] [2023-08-14T19:06:17.665Z] Setting GAC to /home/codespace/.config/firebase/fabiolaccerd01_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/codespace/.config/firebase/fabiolaccerd01_gmail_com_application_default_credentials.json"}}
+[debug] [2023-08-14T19:06:17.666Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-2e6ad/adminSdkConfig [none]
+[debug] [2023-08-14T19:06:18.035Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-2e6ad/adminSdkConfig 200
+[debug] [2023-08-14T19:06:18.035Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-2e6ad/adminSdkConfig {"projectId":"twitter-clone-2e6ad","databaseURL":"https://twitter-clone-2e6ad-default-rtdb.firebaseio.com","storageBucket":"twitter-clone-2e6ad.appspot.com","locationId":"us-central"}
+[info] i  functions: Watching "/workspaces/twitter-clone/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspaces/twitter-clone/functions\" for Cloud Functions..."}}
+[debug] [2023-08-14T19:06:18.077Z] Validating nodejs source
+[warn] ⚠  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-08-14T19:06:18.078Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/index.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/index.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/gcp/cloudfunctions.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/backend.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorShared.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/commands/index.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/index.js
+- /usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/bin/firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/index.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/index.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/gcp/cloudfunctions.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/deploy/functions/backend.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorShared.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/controller.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/commands/database-get.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/commands/index.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/index.js","/usr/local/share/nvm/versions/node/v20.4.0/lib/node_modules/firebase-tools/lib/bin/firebase.js"]}
+[debug] [2023-08-14T19:06:18.078Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-08-14T19:06:18.079Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.2.0",
+    "firebase-functions": "^4.0.1",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.6",
+    "typescript": "^4.6.4"
+  },
+  "private": true
+}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:
+
+ functions/lib/index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:\n\n functions/lib/index.js does not exist, can't deploy Cloud Functions"}}
